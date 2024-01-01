@@ -3,7 +3,10 @@ package com.example.myappthree;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -33,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
         num_list.add("9");
 
         gridViewAdapter = new GridViewAdapter(MainActivity.this,num_list);
+        gv_count.setAdapter(gridViewAdapter);
+
+        gv_count.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Toast.makeText(getApplicationContext(), num_list.get(position), Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 }

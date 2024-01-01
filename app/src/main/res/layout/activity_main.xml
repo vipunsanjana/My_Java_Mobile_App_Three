@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Grid View"
+        android:text="Change Recycle View"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,9 +21,12 @@
 
     <GridView
         android:id="@+id/gv_count"
-        android:layout_width="409dp"
-        android:layout_height="646dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:numColumns="4"
         android:layout_margin="30dp"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
