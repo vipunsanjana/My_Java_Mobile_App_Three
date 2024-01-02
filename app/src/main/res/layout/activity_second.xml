@@ -4,32 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/tv_grid"
+        android:id="@+id/tv_recycle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Change Grid View"
+        android:text="Change Recycle View"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <GridView
-        android:id="@+id/gv_count"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_contact"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:numColumns="4"
-        android:layout_margin="30dp"
-        android:horizontalSpacing="20dp"
-        android:verticalSpacing="20dp"
+        android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_grid" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_recycle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
